@@ -9,5 +9,5 @@
     "**/*.spec.ts",
     "**/*.test.ts",
     "src/global.d.ts"
-  ],
+  ]
 }

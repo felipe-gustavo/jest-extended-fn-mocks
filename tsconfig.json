@@ -27,11 +27,6 @@
         "src/*"
       ]
     },
-    "plugins": [
-      {
-        "transform": "typescript-transform-paths"
-      }
-    ]
   },
   "include": [
     "src",

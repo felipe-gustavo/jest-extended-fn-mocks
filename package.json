@@ -1,6 +1,6 @@
 {
   "name": "jest-extended-fn-mocks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extends the Jest Fn mock methods",
   "main": "dist/index.js",
   "types": "src/types/index.d.ts",
@@ -36,12 +36,12 @@
     "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "ts-patch": "^3.3.0",
+    "tsc-alias": "^1.8.16",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.32.1",
-    "typescript-transform-paths": "^3.5.5"
+    "typescript-eslint": "^8.32.1"
   },
   "scripts": {
-    "build": "tsc -p tsconfig-build.json",
+    "build": "tsc -p tsconfig-build.json && tsc-alias",
     "test": "jest --collectCoverage"
   },
   "repository": {
