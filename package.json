@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Extends the Jest Fn mock methods",
   "main": "dist/index.js",
-  "types": "src/types/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "author": "khaous",
   "license": "MIT",
   "exports": {
@@ -25,6 +25,7 @@
     "@swc/jest": "^0.2.39",
     "@types/jest": "^30.0.0",
     "@types/ramda": "^0.30.2",
+    "cpy-cli": "^5.0.0",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-import-resolver-typescript": "^4.3.5",
@@ -40,8 +41,14 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.32.1"
   },
+  "config": {
+    "buildTsconfig": "tsconfig-build.json"
+  },
   "scripts": {
-    "build": "tsc -p tsconfig-build.json && tsc-alias",
+    "build": "yarn transpile && yarn transpile-alias && yarn copy-types",
+    "copy-types": "cpy 'src/types/*.d.ts' dist/types",
+    "transpile": "tsc -p ${npm_package_config_buildTsconfig}",
+    "transpile-alias": "tsc-alias -p ${npm_package_config_buildTsconfig}",
     "test": "jest --collectCoverage"
   },
   "repository": {
