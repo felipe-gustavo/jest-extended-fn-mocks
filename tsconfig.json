@@ -14,11 +14,6 @@
       "node"
     ],
     "resolveJsonModule": true,
-    "declaration": true,
-    "outDir": "dist",
-    "declarationDir": "dist",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
     "baseUrl": "./",
@@ -26,7 +21,7 @@
       "@/*": [
         "src/*"
       ]
-    },
+    }
   },
   "include": [
     "src",

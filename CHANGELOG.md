@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 
 ## 1.0.1 (July 22, 2025)
+ - Fix type declaration issues not being included in dist
+ - Add `cpy-cli` to copy type declarations to the `dist` folder
+ - Update `yarn build` script to include copying type declarations
+ - Split typescript build into `transpile` and `transpile-alias` scripts
+ - Split `compilerOptions` into `tsconfig.json` and `tsconfig.alias.json`
+
+## 1.0.1 (July 22, 2025)
 
  - Fixed issue with TypeScript alias paths definitions
  - Added `tsc-alias`
