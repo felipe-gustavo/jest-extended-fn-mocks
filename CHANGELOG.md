@@ -2,7 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
-## 1.0.1 (July 22, 2025)
+## 1.0.3 (July 23, 2025)
+ - Mock Global Function to reflect on auto mock
+ - Fix last CHANGELOG.md entry to reflect the correct date (metalanguage)
+
+
+## 1.0.2 (July 22, 2025)
  - Fix type declaration issues not being included in dist
  - Add `cpy-cli` to copy type declarations to the `dist` folder
  - Update `yarn build` script to include copying type declarations

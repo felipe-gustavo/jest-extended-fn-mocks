@@ -11,12 +11,15 @@ import {
 
 const FnConstructor = jest.fn().constructor
 
-FnConstructor.prototype.mockReturnForDescribe = mockReturnForDescribe
-FnConstructor.prototype.mockImplementationForDescribe =
-  mockImplementationForDescribe
-FnConstructor.prototype.mockReturnForTestcase = mockReturnForTestcase
-FnConstructor.prototype.mockImplementationForTestcase =
-  mockImplementationForTestcase
+;[
+  mockReturnForDescribe,
+  mockImplementationForDescribe,
+  mockReturnForTestcase,
+  mockImplementationForTestcase,
+].forEach(fn => {
+  FnConstructor.prototype[fn.name] = fn
+  globalThis.Function.constructor.prototype[fn.name] = fn
+})
 
 mockImplementationForTestcaseSetup()
 mockReturnForTestcaseSetup()
