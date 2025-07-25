@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.5 (July 25, 2025)
+ - Fix npm link on README.md details
+
 ## 1.0.4 (July 25, 2025)
  - Improve README.md details
 
