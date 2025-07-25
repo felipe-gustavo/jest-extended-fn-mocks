@@ -1,6 +1,20 @@
 # Jest Extended FN Mocks
 
+<a href="https://www.npmjs.com/package/jest"><img src="https://img.shields.io/npm/v/jest-extended-fn-mocks" alt="npm version"></a>
+
 Enhance `jest.fn()` with custom mockers for more flexible and scoped mocking in your tests.
+
+---
+
+Why Jest Extended FN Mocks
+
+Mocking functions in Jest can quickly become messy—especially as your test suite grows. Have you ever found yourself juggling `mockReturnValue`, `mockImplementation`, `mockReturnValueOnce`, and endless `mockReset` or `mockRestore` calls, just to keep your mocks in sync with your test scopes? It’s easy to lose track of which mock is active, accidentally leak state between tests, or overwrite a mock you still need elsewhere.
+
+Jest Extended FN Mocks helps you keep your mocks coherent and predictable. It lets you scope mock return values and implementations to specific `describe` or `test` blocks, so you can confidently override behavior for just the tests you want—without worrying about cleanup or side effects. No more manual resets or accidental cross-test pollution: your mocks always revert to their previous state automatically.
+
+With this extension, you can focus on what your tests should do, not on wrangling your mocks.
+
+---
 
 ## Features
 
