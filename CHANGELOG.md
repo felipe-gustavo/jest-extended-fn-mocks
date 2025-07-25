@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.4 (July 25, 2025)
+ - Improve README.md details
+
 ## 1.0.3 (July 23, 2025)
  - Mock Global Function to reflect on auto mock
  - Fix last CHANGELOG.md entry to reflect the correct date (metalanguage)
