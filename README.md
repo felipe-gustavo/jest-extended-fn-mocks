@@ -1,6 +1,6 @@
 # Jest Extended FN Mocks
 
-<a href="https://www.npmjs.com/package/jest"><img src="https://img.shields.io/npm/v/jest-extended-fn-mocks" alt="npm version"></a>
+<a href="https://www.npmjs.com/package/jest-extended-fn-mocks"><img src="https://img.shields.io/npm/v/jest-extended-fn-mocks" alt="npm version"></a>
 
 Enhance `jest.fn()` with custom mockers for more flexible and scoped mocking in your tests.
 
