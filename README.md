@@ -6,7 +6,7 @@ Enhance `jest.fn()` with custom mockers for more flexible and scoped mocking in 
 
 ---
 
-Why Jest Extended FN Mocks
+## Why Jest Extended FN Mocks
 
 Mocking functions in Jest can quickly become messy—especially as your test suite grows. Have you ever found yourself juggling `mockReturnValue`, `mockImplementation`, `mockReturnValueOnce`, and endless `mockReset` or `mockRestore` calls, just to keep your mocks in sync with your test scopes? It’s easy to lose track of which mock is active, accidentally leak state between tests, or overwrite a mock you still need elsewhere.
 
